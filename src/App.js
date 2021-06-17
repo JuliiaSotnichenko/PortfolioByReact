@@ -1,7 +1,14 @@
 import React, { Component } from "react"
 import logo from "./logo.svg"
 import "./App.css"
+import Home from "./home.js"
 
+
+function App() {
+    return (
+        <Home/>
+    );
+}
 
 // class LambdaDemo extends Component {
 //   constructor(props) {
