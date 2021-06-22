@@ -5,14 +5,14 @@ class Home extends React.Component{
         return (
             <div>
                 
-{/* <aside class="sidepanel">
+<aside class="sidepanel">
     <i class="fab fa-linkedin "></i>
-    <a target="_blank"  href="https://www.linkedin.com/in/juliiasotnichenko/" class="sidepanel__link__linkedn"><img src="icons/social/61109%20(1).png" alt="linkedn"></a>
-    <a target="_blank" href="https://www.instagram.com/juliiasotnichenko/" class="sidepanel__link"><img src="icons/social/instagram.svg" alt="instagram"></a>
-    <a target="_blank"  href="https://github.com/JuliiaSotnichenko" class="sidepanel__link"><img src="icons/social/github.svg" alt="github"></a>
+    <a target="_blank"  href="https://www.linkedin.com/in/juliiasotnichenko/" class="sidepanel__link__linkedn"><img src="icons/social/61109%20(1).png" alt="linkedn" /></a>
+    <a target="_blank" href="https://www.instagram.com/juliiasotnichenko/" class="sidepanel__link"><img src="icons/social/instagram.svg" alt="instagram" /></a>
+    <a target="_blank"  href="https://github.com/JuliiaSotnichenko" class="sidepanel__link"><img src="icons/social/github.svg" alt="github" /></a>
     <div class="sidepanel__divider"></div>
     <div class="sidepanel__text"><span>Social networks</span></div>
-</aside> */}
+</aside>
 <div class="menu">
     <div class="menu__block">
         <div class="menu__close">
@@ -72,7 +72,7 @@ class Home extends React.Component{
     <div class="container">
         <div class="about__wrapper">
             <div class="about__photo">
-                <img src="img/juliia.main.jpg" alt="photo"></img>
+                <img src="asset/img/yuliiaDev.jpeg" alt="photo"></img>
             </div>
             <div class="about__descr">
                 <h2 class="title title_fz16 about__title">About Me</h2>
@@ -188,7 +188,7 @@ class Home extends React.Component{
                         <div class="resume__item">
                             <div class="resume__item-head">
                                 <div class="resume__item-icon">
-                                    <img src="icons/experience/designer.svg" alt="designer"></img>
+                                    <img src="asset/icons/experience/designer.svg" alt="designer"></img>
                                 </div>
                                 <h4 class="title title_fz14">Information Technology Sales Manager</h4>
                                 <div class="resume__item-location">Squad Team | Москва (2018)</div>
