@@ -1,13 +1,26 @@
-import React, { Component } from "react"
-import logo from "./logo.svg"
-import "./App.css"
-import Home from "./home.js"
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import About from "./pages/About";
+import Experience from "./pages/Experience";
+import Home from "./home.js";
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 
 function App() {
     return (
-        <Home/>
-    );
+        <Router>
+           
+            <Switch>
+                <Route path='/' component={Home} />
+                <Route path='/about' component={About} />
+                <Route path='/experience' component={Experience} />
+                
+            </Switch>
+            <About/>
+        </Router>
+       
+    )
 }
 
 // class LambdaDemo extends Component {

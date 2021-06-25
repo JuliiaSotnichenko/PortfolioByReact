@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 class Home extends React.Component{
     render(){
@@ -23,7 +24,7 @@ class Home extends React.Component{
 
         <nav>
             <ul class="menu__list">
-                <li class="menu__link"><a href="#about">About me</a></li>
+                <li class="menu__link"><Link to ="/about">About me</Link></li>
                 <li class="menu__link"><a href="#">My experience</a></li>
                 <li class="menu__link"><a href="#">My skills</a></li>
                 <li class="menu__link"><a href="#">My works</a></li>
@@ -61,148 +62,18 @@ class Home extends React.Component{
             <div class="title title_fz16 promo__subtitle">My name is Yuliia Sotnichenko</div>
             <h1 class="title title_fz48 promo__title">I'm a web-developer from Luxembourg</h1>
             <div class="promo__btns">
-                <a href="#" class="promo__link btn">Portfolio</a>
-                <a href="#" class="promo__link">About me</a>
+                <Link class="promo__link btn" to="/portfolio">Portfolio</Link>
+                    
+                <Link class="promo__link" to="/about">About me</Link>
             </div>
         </div>
     </section>
 
 
-<section class="about"> <a name="about"></a>
-    <div class="container">
-        <div class="about__wrapper">
-            <div class="about__photo">
-                <img src="asset/img/yuliiaDev.jpeg" alt="photo"></img>
-            </div>
-            <div class="about__descr">
-                <h2 class="title title_fz16 about__title">About Me</h2>
-                <div class="title title_fz36 about__subtitle">My name is Yuliia</div>
-                <div class="divider"></div>
-                <p class="about__text">I'm a Web-Developer and a fun person, passionate about code. I was the Head of lead generation specialists for an IT company and continuing my path as a Front-end Developer. Focused on integrating experience and new skills into the Front-end Developer position as much as possible. </p>
-            </div>
-            <div class="about__skills">
-                <div class="about__skills-item">
-                    <div class="about__skills-circle">
-                        <img src="icons/about_me/web_development.svg" alt="web-dev"></img>
-                    </div>
-                    <div>
-                        <div class="title title_fz14">
-                            Web development
-                        </div>
-                        <div class="about__skills-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </div>
-                    </div>
-                </div>
-                <div class="about__skills-item">
-                    <div class="about__skills-circle">
-                        <img src="icons/about_me/mobile_dev.svg" alt="mobile-dev"></img>
-                    </div>
-                    <div>
-                        <div class="title title_fz14">
-                            Application Development
-                        </div>
-                        <div class="about__skills-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </div>
-                    </div>
-                </div>
-                <div class="about__skills-item">
-                    <div class="about__skills-circle">
-                        <img src="icons/about_me/design.svg" alt="design"></img>
-                    </div>
-                    <div>
-                        <div class="title title_fz14">
-                            UI/UX Design
-                        </div>
-                        <div class="about__skills-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 
-<section class="resume">
-    <div class="container">
-        <h2 class="title title_fz16 title__section-title">Experience</h2>
-        <div class="title title_fz36 resume__subtitle">How will I be useful</div>
-        <div class="divider"></div>
 
-        <div class="resume__wrapper">
-            <div class="resume__column">
-                <h3 class="title title_fz20 resume__column-title">Education</h3>
-                <ul>
-                    <li>
-                        <div class="resume__item">
-                            <div class="resume__item-head">
-                                <div class="resume__item-icon">
-                                    <img src="icons/experience/university.svg" alt="university"></img>
-                                </div>
-                                <h4 class="title title_fz14">Kiev International University of Civil Aviation</h4>
-                                <div class="resume__item-location">Bachelor's degree in Marketing | Ukraine (2007-2012)</div>
-                            </div>
-                           
-                            <div class="resume__item-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="resume__item">
-                            <div class="resume__item-head">
-                                <div class="resume__item-icon">
-                                    <img src="icons/experience/courses.svg" alt="courses"></img>
-                                </div>
-                                <h4 class="title title_fz14">Udemy</h4>
-                                <div class="resume__item-location">Курсы по Web-разработке </div>
-                            </div>
-                            <div class="resume__item-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="resume__column">
-                <h3 class="title title_fz20 resume__column-title">Work experience</h3>
-                <ul>
-                    <li>
-                        <div class="resume__item">
-                            <div class="resume__item-head">
-                                <div class="resume__item-icon">
-                                    <img src="icons/experience/developer.svg" alt="developer"></img>
-                                </div>
-                                <h4 class="title title_fz14">Head of lead generation specialists</h4>
-                                <div class="resume__item-location"> ABM Cloud | Ukraine (2018-2020)</div>
-                            </div>
-                            <div class="resume__item-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="resume__item">
-                            <div class="resume__item-head">
-                                <div class="resume__item-icon">
-                                    <img src="asset/icons/experience/designer.svg" alt="designer"></img>
-                                </div>
-                                <h4 class="title title_fz14">Information Technology Sales Manager</h4>
-                                <div class="resume__item-location">Squad Team | Москва (2018)</div>
-                            </div>
-                            <div class="resume__item-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <section class="skills">
     <div class="container">
